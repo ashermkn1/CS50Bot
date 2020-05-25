@@ -20,7 +20,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message: discord.Message):
-    channel = client.get_channel(714316006503219341)
+    channel = client.get_channel(702302895353233439)
     if message.author == client.user:
         return
     if message.content.contains("https://discord.gg/"):
