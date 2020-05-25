@@ -24,9 +24,9 @@ async def on_message(message: discord.Message):
     if message.author == client.user:
         return
     if message.content.contains("https://discord.gg/"):
-        print(message.author)
         await message.channel.send(f'{message.author.mention}, we do not allow promotions of any kind, whether it '
-                                   f'be self promotions or discord server links of any kind. Please see {channel.mention} for more details')
+                                   f'be self promotions or discord server links. Please see {channel.mention} for '
+                                   f'more details')
 
 
 client.run(TOKEN)
